@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    width: 80%;
+    margin: 0% 10%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    font-size: 24px;
+    height: 50px;
+    background: black;
+    border-radius: 5px;
+}
+
+.header-item {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+    color: rgb(0, 236, 253);
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.page-head {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    display:inline-block;
+    position: relative;
+}
+
+.section-header {
+    padding: 100px 0px 0px;
+    text-align: center;
+}
+
+.page2 .section-header h2::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 20px;  
+    background-color: rgb(0, 236, 253);
+    bottom: 0;
+    left: -12%;
+    z-index: -1;
+    display: inline-block;
+}
+
+.page .section-header h2::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 20px;  
+    background-color: rgb(0, 236, 253);
+    bottom: 0;
+    left: -5%;
+    z-index: -1;
+    display: inline-block;
+}
+
+.content {
+    margin: 0% 5%;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr ;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.img {
+    grid-column: col 2;
+    grid-row: 2;
+}
+
+.list {
+    grid-column: col 3;
+    grid-row: 2;
+    font-size: 20px;
+    padding: 10px;
+    vertical-align: bottom;
+    text-align: left;
+}
