@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EV Charger Station</title>
-    <link rel="stylesheet" href="style.css">
+	<title>EV Charger Station</title>
+	<link rel="stylesheet" type="text/css" href="style0.css">
+
 </head>
 <body>
-	<div class="header">
-        <a class="header-item left" href="#">Zolt</a>
-        <a class="header-item" href="#">Product</a>
-        <a class="header-item" href="# ">About</a>
-        <a class="header-item" href="#">Press</a>
-        <a class="header-item" href="#">Contact</a>
-    </div>
-    <div class="page">
-        <div class="section-header">
-            <h2 class="page-head">In-House Maintenence And Charging</h2>
-        </div>  
-        <div class="content-maintenence">
-            <img class="img" src="hero-image.jpg" width=90% height=100%>
-            <div class="list">
-                <ul style="list-style-position: inside;">
-                    <li>Works with 36v or 48v scooters</li>
-                    <li>Whats up</li>
-                </ul>
-            </div>
-                
-        </div>
-    </div>
-    <div class="page2">
-        <div class="section-header">
-            <h2 class="page-head">Platform</h2>
-        </div>
-        <div class="content-platform">
-            <img class="img-map" src="maps.png" width=90% height=90%>
-            <div class="list-map">
-                <ul style="list-style-position:inside">
-                    <li>Connect all scooter sharing on one map.</li>
-                </ul>
-            </div>     
-        </div>  
-    </div>
+	<script src="script.js"></script>
+	<div class="title">
+		<!-- <span class="title-text"> -->
+		<a href="javascript:void(0)" class="title-text" >Product</a>
+		<a href="javascript:void(0)" class="title-text">About</a>
+		<a href="javascript:void(0)" class="title-text">Press</a>
+		<a href="javascript:void(0)" class="title-text">Contact</a>
+		<a href="javascript:void(0)" class="title-text">Portals</a>
+		<a href="javascript:void(0)" class="title-text">Socials</a>
+		<!-- </span> -->
+	</div>
+
+	<div class = "intro">
+		<p id = "ZOLT"> ZOLT AUTONOMOUS</p>
+		<p id = "CHARGING"> CHARGING PLATFORM</p>
+	</div>
+
+<!-- 	<div class = "dock">
+		<img id = "dockpic" src="dock.jpg" height="600">
+		
+		<div class = "docktext">
+			<p id = "dockhead">Charging Docks</p>
+			<p class = "dockcont">·Hello</p>
+			<p class = "dockcont">·Hi, do I look ok</p>
+		</div> -->
+	<!-- </div> -->
+
+	<div id="map"></div>
+	<!-- Replace the value of the key parameter with your own API key. -->
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAagCuUU9xRMHB6bNp4_q2DHccCd3TK240&callback=initMap">
+	</script>
+
+
+
+
 </body>
 </html>
