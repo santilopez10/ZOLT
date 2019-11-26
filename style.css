@@ -145,7 +145,8 @@
     width: 80%;
     height: 80%;
     display: grid;
-    grid-template-columns: 2fr auto 3fr 2fr;
+    margin-top: 20px;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 5fr 1fr;
 }
 
@@ -238,4 +239,49 @@ ul li:before {
 	color:white;
 	font-family: Impact;/*Hiragino Kaku Gothic StdN;*/
 	font-size: 70px;
+}
+
+.jacob {
+    position: absolute;
+    bottom: -2780px;
+    right: 83px;
+}
+
+.zolt1 {
+    display: none;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.zolt2 {
+    display: none;
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.zolt3 {
+    display: none;
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.zolt4 {
+    display: none;
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+#app {
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 20px;
+}
+
+.active {
+    display: block;
+    grid-column: 1;
+    grid-row: 2;
 }

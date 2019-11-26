@@ -3,6 +3,7 @@
 <head>
     <title>EV Charger Station</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -27,7 +28,6 @@
             <img class="img" src="Charger.png" width=90% height=100%>
             <div class="list">
                 <ul style="list-style-position: outside;">
-                    <li class="items">Rent out office space to install charging stations for E-Scooters</li>
                     <li class="items">Docks can charge up to 10 scooters at a time</li>
                     <li class="items">Scooters can only be unlocked after 60% charge</li>
                     <li class="items">Solves the issue of scooter disarray on sidewalks</li>
@@ -45,6 +45,7 @@
             <img class="img-maintenance" src="maintenance.webp" width=90% height=100%>
             <div class="list-maintenance">
                 <ul style="list-style-position: inside;">
+                    <li class="items">Rent out office space to install charging stations for E-Scooters</li>
                     <li class="items">Flat rate for E-scooter companies for repair service</li>
                     <li class="items">Have in house repairman and engineers</li>
                     <li class="items">Extends the life of scooters through more frequent repairs</li>
@@ -58,8 +59,21 @@
         <div class="section-header">
             <h1 class="page-head">Platform</h1>
         </div>
-        <div class="content-platform">
-            <img class="img-map" src="map.jpg" width=80% height=90%>
+        <div class="content-platform" style="justify-content: center;">
+            <div id="app">
+                <a class="zolt1 active" onclick="toggleApp(this.id)" href="javascript:void(0)" id="1">
+                    <img src="zolt1.jpg" width=360px height=640px>
+                </a>
+                <a class="zolt2" onclick="toggleApp(this.id)" href="javascript:void(0)" id="2">
+                    <img src="zolt2.jpg" width=360px height=640px>
+                </a>
+                <a class="zolt3" onclick="toggleApp(this.id)" href="javascript:void(0)" id="3">
+                    <img src="zolt3.jpg" width=360px height=640px>
+                </a>
+                <a class="zolt4" onclick="toggleApp(this.id)" href="javascript:void(0)" id="4">
+                    <img src="zolt4.jpg" width=360px height=640px>
+                </a>
+            </div>
             <div class="list-map">
                 <ul style="list-style-position:inside">
                     <li class="items">Connect all scooter sharing on one map.</li>
