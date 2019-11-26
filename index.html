@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EV Charger Station</title>
-	<link rel="stylesheet" type="text/css" href="style0.css">
-
+    <title>EV Charger Station</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<script src="script.js"></script>
-	<div class="title">
-		<!-- <span class="title-text"> -->
-		<a href="javascript:void(0)" class="title-text" >Product</a>
-		<a href="javascript:void(0)" class="title-text">About</a>
-		<a href="javascript:void(0)" class="title-text">Press</a>
-		<a href="javascript:void(0)" class="title-text">Contact</a>
-		<a href="javascript:void(0)" class="title-text">Portals</a>
-		<a href="javascript:void(0)" class="title-text">Socials</a>
-		<!-- </span> -->
-	</div>
-
-	<div class = "intro">
-		<p id = "ZOLT"> ZOLT AUTONOMOUS</p>
-		<p id = "CHARGING"> CHARGING PLATFORM</p>
-	</div>
-
-<!-- 	<div class = "dock">
-		<img id = "dockpic" src="dock.jpg" height="600">
-		
-		<div class = "docktext">
-			<p id = "dockhead">Charging Docks</p>
-			<p class = "dockcont">·Hello</p>
-			<p class = "dockcont">·Hi, do I look ok</p>
-		</div> -->
-	<!-- </div> -->
-
-	<div id="map"></div>
-	<!-- Replace the value of the key parameter with your own API key. -->
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAagCuUU9xRMHB6bNp4_q2DHccCd3TK240&callback=initMap">
-	</script>
-
-
-
-
+	<div class="header">
+        <a class="left" href="#"><img class="logo" src="logo.png" width=100px height=35px></a>
+        <a class="header-item" href="#">Product</a>
+        <a class="header-item" href="# ">About</a>
+        <a class="header-item" href="#">Press</a>
+        <a class="header-item" href="#">Contact</a>
+    </div>
+    <div class="page">
+        <img class="img" src="hero-image.jpg" width=100% height=100%>
+        <div class = "intro">
+            <p id = "ZOLT"> ZOLT AUTONOMOUS</p>
+            <p id = "CHARGING"> CHARGING PLATFORM</p>
+        </div>
+    </div>
+    <div class="page1">
+        <div class="section-header">
+            <h1 class="page-head">Charging Station</h1>
+        </div>  
+        <div class="content-chargers">
+            <img class="img" src="Charger.png" width=90% height=100%>
+            <div class="list">
+                <ul style="list-style-position: outside;">
+                    <li class="items">Rent out office space to install charging stations for E-Scooters</li>
+                    <li class="items">Docks can charge up to 10 scooters at a time</li>
+                    <li class="items">Scooters can only be unlocked after 60% charge</li>
+                    <li class="items">Solves the issue of scooter disarray on sidewalks</li>
+                    <li class="items">Eliminates the expensive costs of Juicers </li>
+                </ul>
+            </div>
+                
+        </div>
+    </div>
+    <div class="page2">
+        <div class="section-header">
+            <h1 class="page-head">In-House Maintenence And Charging</h1>
+        </div>  
+        <div class="content-maintenence">
+            <img class="img-maintenance" src="maintenance.webp" width=90% height=100%>
+            <div class="list-maintenance">
+                <ul style="list-style-position: inside;">
+                    <li class="items">Flat rate for E-scooter companies for repair service</li>
+                    <li class="items">Have in house repairman and engineers</li>
+                    <li class="items">Extends the life of scooters through more frequent repairs</li>
+                    <li class="items">Scooter parts are supplied by the E-Scooter companies</li>
+                </ul>
+            </div>
+                
+        </div>
+    </div>
+    <div class="page3">
+        <div class="section-header">
+            <h1 class="page-head">Platform</h1>
+        </div>
+        <div class="content-platform">
+            <img class="img-map" src="map.jpg" width=80% height=90%>
+            <div class="list-map">
+                <ul style="list-style-position:inside">
+                    <li class="items">Connect all scooter sharing on one map.</li>
+                    <li class="items">Makes it easier to find the closest scooters</li>
+                    <li class="items">Created using major scooter companies API's </li> 
+                </ul>
+            </div>     
+        </div>  
+    </div>
 </body>
 </html>

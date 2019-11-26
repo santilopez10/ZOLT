@@ -5,30 +5,38 @@
 
 .header {
     position: fixed;
-    width: 80%;
-    margin: 0% 10%;
+    top: 2%;
+    width: 100%;
+    margin: 0;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
     font-size: 24px;
-    height: 50px;
+    height: 60px;
+    align-content: center;
     background: black;
     z-index: 2;
     opacity: 100;
-    border-radius: 5px;
 }
 
 .header-item {
-    padding: 10px 10px;
+    padding: 17px 16px;
     text-decoration: none;
     color: white;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
+    font-family: Menlo;
+    margin:0;
+    font-size: 15px;
     text-align: center;
-    border-left: 1px solid white;
 }
 
+.header-item:hover {
+    background-color: rgb(90, 149, 153);
+}
+.header-item:active {
+    border: none;
+}
 .left {
     text-align: left;
+    padding-left: 40px;
     color: rgb(0, 236, 253);
     border: none;
 }
@@ -38,13 +46,34 @@
     height: 100vh;
 }
 
+.page1 {
+    width: 100%;
+    height: 100vh;
+}
+
 .page2 {
     width: 100%;
     height: 100vh;
 }
 
+.page3 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.intro{
+	position: absolute;
+	top:20%;
+	margin-block-end:0;
+	padding-left: 10%;
+	color:white;
+	font-family: Impact;/*Hiragino Kaku Gothic StdN;*/
+	font-size: 70px;
+}
+
 .page-head {
-    font-size: 32px;
+    font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
     text-align: center;
@@ -57,19 +86,7 @@
     text-align: center;
 }
 
-.page2 .section-header h2::after {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 20px;  
-    background-color: rgb(0, 236, 253);
-    bottom: 0;
-    left: -12%;
-    z-index: -1;
-    display: inline-block;
-}
-
-.page .section-header h2::after {
+.page2 .section-header h1::after {
     content: "";
     position: absolute;
     width: 110%;
@@ -81,38 +98,84 @@
     display: inline-block;
 }
 
+.page3 .section-header h1::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 20px;  
+    background-color: rgb(0, 236, 253);
+    bottom: 0;
+    left: -12%;
+    z-index: -1;
+    display: inline-block;
+}
+
+.page1 .section-header h1::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 20px;  
+    background-color: rgb(0, 236, 253);
+    bottom: 0;
+    left: -12%;
+    z-index: -1;
+    display: inline-block;
+}
+
+.content-chargers {
+    margin: 0% 5%;
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr 3fr ;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
 .content-maintenence {
     margin: 0% 5%;
     width: 90%;
-    height: 90%;
+    height: 80%;
     display: grid;
     grid-template-columns: 3fr 5fr 3fr 3fr ;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
 }
 
 .content-platform {
     margin: 0% 10%;
     width: 80%;
-    height: 90%;
+    height: 80%;
     display: grid;
     grid-template-columns: 2fr auto 3fr 2fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
 }
 
 .img {
     grid-column: col 2;
     grid-row: 2;
-    box-shadow: 10px 10px rgb(0, 236, 253);
+}
+
+.img-maintenance {
+    grid-column: col 3;
+    grid-row: 2;
 }
 
 .img-map {
     grid-column: col 2;
     grid-row: 2;
-    box-shadow: 10px 10px rgb(0, 236, 253);
 }
 
 .list {
     grid-column: col 3;
+    grid-row: 2;
+    font-size: 30px;
+    padding: 10px;
+    width: 450px;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.list-maintenance {
+    grid-column: col 2;
     grid-row: 2;
     font-size: 30px;
     padding: 10px;
@@ -128,4 +191,29 @@
     padding: 10px;
     vertical-align: bottom;
     text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "\2022";
+    display: inline-block; width: 1em;
+    margin-left: -1em;
+    color: rgb(0, 236, 253);
+}
+
+.items {
+    display: block;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-family: "Lato",sans-serif;
+}
+
+.logo {
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-decoration: none;
 }
